@@ -31,4 +31,8 @@ while True:
     cv2.imshow('Face Detector app', frame)
     
     # wait and close by pressing any key
-    cv2.waitKey(1)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+    
+vid.release()
+vid.destroyAllWindows()
