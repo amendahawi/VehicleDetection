@@ -29,8 +29,6 @@ while True:
 
     # show image (window name, and what you want to show)
     cv2.imshow('Face Detector app', frame)
-    print("Displaying image")
     
-    # wait and close be pressing any key
+    # wait and close by pressing any key
     cv2.waitKey(1)
-    print("Press any key to exit")
